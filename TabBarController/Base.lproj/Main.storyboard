@@ -20,50 +20,108 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="7nG-sh-YQd">
-                        <imageReference key="image" image="settings_others_icon" symbolScale="default"/>
+                        <imageReference key="image" image="home" symbolScale="default"/>
                     </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="112.5"/>
         </scene>
-        <!--Master-->
+        <!--Search-->
         <scene sceneID="QGI-Za-Gik">
             <objects>
-                <viewController id="LCa-fF-0os" customClass="ViewController" customModule="TabBarController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LCa-fF-0os" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rud-GG-Sxq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="nv3-yp-6sX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Master" image="settings_others_icon" id="JQs-VU-bGP"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="search" id="JQs-VU-bGP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oCn-oU-TUe" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="929" y="845"/>
+            <point key="canvasLocation" x="1025" y="883"/>
         </scene>
-        <!--Tbcon-->
+        <!--Tab Bar Controller-->
         <scene sceneID="A1n-RM-DnK">
             <objects>
-                <tabBarController storyboardIdentifier="tbcon" automaticallyAdjustsScrollViewInsets="NO" id="qPk-9v-gFo" customClass="tbcon" customModule="TabBarController" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tbcon" automaticallyAdjustsScrollViewInsets="NO" id="qPk-9v-gFo" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YkB-Lo-M1b">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="vFb-Al-AGX"/>
                         <segue destination="LCa-fF-0os" kind="relationship" relationship="viewControllers" id="wEi-4Y-8cH"/>
+                        <segue destination="L5Q-Yf-qyc" kind="relationship" relationship="viewControllers" id="i5K-bQ-qfP"/>
+                        <segue destination="x3E-Ss-fMn" kind="relationship" relationship="viewControllers" id="hEb-m3-qc0"/>
+                        <segue destination="zv8-eG-StB" kind="relationship" relationship="viewControllers" id="bb7-Jz-oSc"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jNz-Au-Vwh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="112.5"/>
         </scene>
+        <!--User-->
+        <scene sceneID="AnN-G7-UQC">
+            <objects>
+                <viewController id="L5Q-Yf-qyc" customClass="ViewController" customModule="TabBarController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gJC-yW-rvJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="zZm-6h-K4U"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="User" id="Qe3-iO-RiA">
+                        <imageReference key="image" image="user" symbolScale="default"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fbt-vW-Qaj" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1929" y="113"/>
+        </scene>
+        <!--Heart-->
+        <scene sceneID="Yf7-TM-Gsi">
+            <objects>
+                <viewController id="x3E-Ss-fMn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fss-pl-I7I">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ija-4L-eRl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Heart" image="heart" id="wXJ-KH-KxS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ttk-66-dAA" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1962" y="883"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="d6m-Oh-xhL">
+            <objects>
+                <viewController id="zv8-eG-StB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hcb-8X-uKg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dVD-iH-0h1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings" id="hC4-0Z-YxL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WUH-JO-t3O" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2765" y="883"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="settings_others_icon" width="24" height="24"/>
+        <image name="heart" width="24" height="24"/>
+        <image name="home" width="24" height="24"/>
+        <image name="search" width="24" height="24"/>
+        <image name="settings" width="24" height="24"/>
+        <image name="user" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
